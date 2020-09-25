@@ -24,7 +24,7 @@ AWS IoT Greengrass is software that extends cloud capabilities to local devices.
     Additionally, this data stream will be exported to kinesis data stream named: processedKinesisStream
     
 - tcp-write-raw-data-stream-1
-  > TCP server that will listen to JSON payload and write raw JSON payload to data stream rawStream
+  > TCP server that will listen to JSON payload and write raw JSON payload to data stream rawStream. Multiple tcp-write functionsc can be created to simulate load to data stream.
   
 - tcpclient.js
   > TCP client that will send JSON payload in buffer to TCP server (tcp-write-raw-data-stream-1).
